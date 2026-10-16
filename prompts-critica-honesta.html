@@ -1,0 +1,21 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>5 prompts que fazem a IA parar de te elogiar · Walle-T Studios</title><style>:root{--bg:#0b0b0c;--tx:#f4f1ea;--mut:#9a9a9a;--c:#00e5ff;--y:#ffe600;--m:#ff2bd6;--card:#17171a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.5 system-ui,Segoe UI,sans-serif}
+main{max-width:760px;margin:0 auto;padding:28px 16px 64px}
+.tag{font:600 12px/1 ui-monospace,monospace;letter-spacing:.14em;color:var(--c);text-transform:uppercase}
+h1{font-size:32px;line-height:1.12;margin:10px 0 8px}.sub{color:var(--mut);margin:0 0 24px}
+h2{font-size:18px;margin:30px 0 10px;color:var(--y)}
+.card{background:var(--card);border:1px solid #26262b;border-radius:14px;padding:14px 16px;margin:10px 0;display:flex;gap:14px;align-items:center;justify-content:space-between}
+.card b{display:block;font-size:18px}.card span{color:var(--mut);font-size:15px}
+a.btn,button.btn{flex:none;background:var(--c);color:#04282c;border:0;border-radius:999px;padding:10px 16px;font:700 14px system-ui;text-decoration:none;cursor:pointer}
+pre{background:#101013;border:1px solid #26262b;border-radius:12px;padding:14px;white-space:pre-wrap;font:14px/1.5 ui-monospace,monospace;color:#ebe8e1;margin:8px 0}
+.row{margin:6px 0 18px}footer{margin-top:40px;color:var(--mut);font-size:13px}
+@media(max-width:520px){.card{flex-direction:column;align-items:flex-start}}</style></head><body><main><div class="tag">@walletstudios.br · só para quem comentou</div><h1>5 prompts que fazem a IA parar de te elogiar</h1><p class="sub">Cole no GPT, no Gemini ou no Claude e receba a crítica que o público faria.</p><h2>1 · O executivo que parou a produção</h2><pre id="p0">Você é um executivo de estúdio que acabou de ver a primeira metade do meu filme e não gostou. Fale sem elogios: liste os 3 motivos pelos quais você pararia a produção hoje, do mais grave ao menos grave, citando o trecho exato de cada um.
+MATERIAL:
+[cole aqui o seu roteiro, cena ou ideia]</pre><div class="row"><button class="btn" onclick="cp(0,event)">Copiar</button></div><h2>2 · Os 5 pontos fracos</h2><pre id="p1">Leia o material abaixo como um crítico que não me conhece. Liste os 5 pontos mais fracos. Para cada um: o trecho exato, por que o público abandona ali e a correção em uma frase. Não elogie nada.
+MATERIAL:
+[cole aqui o seu roteiro, cena ou ideia]</pre><div class="row"><button class="btn" onclick="cp(1,event)">Copiar</button></div><h2>3 · O espectador que não liga</h2><pre id="p2">Você é um espectador que nunca ouviu falar de mim e está com o dedo no próximo vídeo. Leia o material e me diga: em qual frase você deixou de se importar, por quê, e o que teria me feito ficar. Responda em 3 linhas.
+MATERIAL:
+[cole aqui o seu roteiro, cena ou ideia]</pre><div class="row"><button class="btn" onclick="cp(2,event)">Copiar</button></div><h2>4 · Sem elogio (use depois de qualquer resposta)</h2><pre id="p3">Reescreva a sua última resposta sem nenhum elogio, sem palavras suaves e sem &quot;mas&quot;. Fique só com o que está errado, o que falta e o que eu devo fazer hoje, em lista numerada.</pre><div class="row"><button class="btn" onclick="cp(3,event)">Copiar</button></div><h2>5 · O melhor do jogo</h2><pre id="p4">Compare o material abaixo com a melhor versão possível desse tipo de conteúdo. Diga em 3 passos o que falta para chegar lá e o que eu devo cortar primeiro.
+MATERIAL:
+[cole aqui o seu roteiro, cena ou ideia]</pre><div class="row"><button class="btn" onclick="cp(4,event)">Copiar</button></div><h2>Como usar</h2><ol style="padding-left:20px;line-height:1.8"><li>Abra um chat novo no GPT, no Gemini ou no Claude.</li><li>Cole o prompt e troque o trecho entre [colchetes] pelo seu material.</li><li>Depois de qualquer resposta que veio elogiando demais, cole o prompt 4.</li></ol><footer>Walle-T Studios · @walletstudios.br</footer><script>function cp(i,e){var b=e.target,t=document.getElementById('p'+i).innerText;function ok(){b.textContent='Copiado ✓'}
+if(navigator.clipboard){navigator.clipboard.writeText(t).then(ok)}else{var r=document.createRange();r.selectNode(document.getElementById('p'+i));getSelection().removeAllRanges();getSelection().addRange(r);document.execCommand('copy');ok()}}</script></main></body></html>

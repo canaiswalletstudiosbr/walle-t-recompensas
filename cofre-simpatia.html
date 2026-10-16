@@ -1,0 +1,37 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>O Cofre do Protagonista · Walle-T Studios</title><style>:root{--bg:#0b0b0c;--tx:#f4f1ea;--mut:#9a9a9a;--c:#00e5ff;--y:#ffe600;--m:#ff2bd6;--card:#17171a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.5 system-ui,Segoe UI,sans-serif}
+main{max-width:760px;margin:0 auto;padding:28px 16px 64px}
+.tag{font:600 12px/1 ui-monospace,monospace;letter-spacing:.14em;color:var(--c);text-transform:uppercase}
+h1{font-size:34px;line-height:1.1;margin:10px 0 8px}.sub{color:var(--mut);margin:0 0 28px}
+h2{font-size:20px;margin:34px 0 12px;color:var(--y)}
+.card{background:var(--card);border:1px solid #26262b;border-radius:14px;padding:14px 16px;margin:10px 0;display:flex;gap:14px;align-items:center;justify-content:space-between}
+.card b{display:block;font-size:18px}.card span{color:var(--mut);font-size:15px}
+a.btn,button.btn{flex:none;background:var(--c);color:#04282c;border:0;border-radius:999px;padding:10px 16px;font:700 14px system-ui;text-decoration:none;cursor:pointer}
+button.alt{background:var(--m);color:#2a0623}
+pre{background:#101013;border:1px solid #26262b;border-radius:12px;padding:14px;white-space:pre-wrap;font:14px/1.5 ui-monospace,monospace;color:#ebe8e1;max-height:320px;overflow:auto}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 6px}
+footer{margin-top:40px;color:var(--mut);font-size:13px}
+@media(max-width:520px){.card{flex-direction:column;align-items:flex-start}}</style></head><body><main>
+<div class="tag">@walletstudios.br · cofre exclusivo</div><h1>O Cofre do Protagonista</h1><p class="sub">Ferramentas, skills e repositórios para criar um personagem que o público quer ver vencer.</p>
+<h2>Skill exclusiva</h2>
+<div class="card"><div><b>teste-do-protagonista</b><span>Baixe, coloque na pasta de skills do Claude e use.</span></div><button class="btn alt" onclick="dl()">Baixar SKILL.md</button></div>
+<h2>Prompt exclusivo</h2>
+<p style="margin:0 0 6px;color:var(--mut)">Prompt: testa o seu personagem</p>
+<pre id="p">Você é consultor de roteiro. Vou descrever o meu protagonista. Responda em 3 blocos:
+1) O que ele QUER (uma coisa concreta que dá para filmar).
+2) O que o MACHUCA: o defeito humano que o público reconhece.
+3) POR QUE o público o PERDOA quando ele erra.
+Em cada bloco, aponte onde a minha descrição está fraca e reescreva em uma frase.
+No fim, liste 2 cenas em que ele erra e o público ainda torce por ele. Não invente fatos que não estão na descrição.
+PROTAGONISTA:
+[descreva em 5 a 8 linhas: quem é, o que quer, como trata os outros, o que esconde]</pre><div class="row"><button class="btn" onclick="cp(event)">Copiar prompt</button></div>
+<h2>Apps para baixar</h2>
+<div class="card"><div><b>Storyboarder</b><span>Desenhe a cena do seu personagem com bonecos de palito antes de gerar qualquer imagem.</span></div><a class="btn" href="https://github.com/wonderunit/storyboarder/releases" target="_blank" rel="noopener">Baixar</a></div><div class="card"><div><b>Trelby</b><span>Editor de roteiro grátis para escrever as cenas em que ele erra.</span></div><a class="btn" href="https://github.com/trelby/trelby/releases" target="_blank" rel="noopener">Baixar</a></div><div class="card"><div><b>Obsidian</b><span>Caderno de notas para guardar a ficha de cada personagem e ligar um ao outro.</span></div><a class="btn" href="https://obsidian.md" target="_blank" rel="noopener">Baixar</a></div><div class="card"><div><b>Excalidraw</b><span>Quadro para desenhar o mapa do que o personagem quer, dói e perdoa.</span></div><a class="btn" href="https://excalidraw.com" target="_blank" rel="noopener">Abrir</a></div><div class="card"><div><b>Blender</b><span>3D grátis para criar o personagem consistente de uma série.</span></div><a class="btn" href="https://www.blender.org/download/" target="_blank" rel="noopener">Baixar</a></div>
+<h2>Repositórios do GitHub</h2>
+<div class="card"><div><b>shuohao-skills</b><span>Skills que montam personagens, roteiro e storyboard de séries curtas com IA.</span></div><a class="btn" href="https://github.com/eternityspring/shuohao-skills" target="_blank" rel="noopener">Abrir no GitHub</a></div><div class="card"><div><b>dramatron</b><span>Ferramenta do Google DeepMind que gera roteiros com IA.</span></div><a class="btn" href="https://github.com/google-deepmind/dramatron" target="_blank" rel="noopener">Abrir no GitHub</a></div><div class="card"><div><b>Fountain</b><span>Formato aberto de roteiro: escreva em texto e abra em qualquer app.</span></div><a class="btn" href="https://github.com/nyousefi/Fountain" target="_blank" rel="noopener">Abrir no GitHub</a></div><div class="card"><div><b>skills</b><span>Repositório oficial de skills do Claude.</span></div><a class="btn" href="https://github.com/anthropics/skills" target="_blank" rel="noopener">Abrir no GitHub</a></div><div class="card"><div><b>prompts.chat</b><span>Milhares de prompts prontos para copiar.</span></div><a class="btn" href="https://github.com/f/prompts.chat" target="_blank" rel="noopener">Abrir no GitHub</a></div>
+<footer>Walle-T Studios · @walletstudios.br · links conferidos em 15/10/2026</footer>
+<script>
+var S="---\nname: teste-do-protagonista\ndescription: Testa se o p\u00fablico vai torcer por um personagem em 3 perguntas (Quer, D\u00f3i, Perdoa) e reescreve o ponto mais fraco. Use quando o usu\u00e1rio descrever um protagonista, her\u00f3i ou personagem de v\u00eddeo, roteiro ou hist\u00f3ria.\n---\n\n# Teste do protagonista\n\nReceba a descri\u00e7\u00e3o do personagem (5 a 8 linhas) e responda em 3 blocos:\n1. QUER: uma coisa concreta que d\u00e1 para filmar. \"Ser feliz\" n\u00e3o conta; \"abrir a padaria\" conta.\n2. D\u00d3I: o defeito humano que o p\u00fablico reconhece (ci\u00fame, orgulho, medo de pedir ajuda). Aponte onde a descri\u00e7\u00e3o est\u00e1 vaga e reescreva em uma frase.\n3. PERDOA: o motivo que faz o p\u00fablico entender o erro. Crueldade sem motivo n\u00e3o se perdoa.\n\nDepois aplique os 3 testes: do erro (o p\u00fablico entende por que errou?), do outro (trata bem quem n\u00e3o pode retribuir?), da dor (paga algum pre\u00e7o?). Marque passa ou falha em cada.\nTermine com 2 cenas em que ele erra e o p\u00fablico ainda torce. N\u00e3o invente fatos que n\u00e3o est\u00e3o na descri\u00e7\u00e3o.\n";
+function dl(){var a=document.createElement('a');a.href='data:text/markdown;charset=utf-8,'+encodeURIComponent(S);a.download='SKILL.md';document.body.appendChild(a);a.click();a.remove();}
+function cp(e){var b=e.target,t=document.getElementById('p').innerText;function ok(){b.textContent='Copiado ✓'}if(navigator.clipboard){navigator.clipboard.writeText(t).then(ok)}else{var r=document.createRange();r.selectNode(document.getElementById('p'));getSelection().removeAllRanges();getSelection().addRange(r);document.execCommand('copy');ok()}}
+</script></main></body></html>
